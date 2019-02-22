@@ -2,6 +2,10 @@
 
 HANNY老师写的东西感觉都成了typecho的精品了，非常感谢在茫茫人海中还有这样一位好的互联网知识推动者，有幸使用到HANNY老师的Links插件，怎能不记录一下呢？但是HANNY的链接好像打不开了emmm
 
+>本版基于原版修改，适配于[Dolphin - 海豚 - Typecho主题](https://www.ryongyon.com/dolphin.html)
+>
+
+
 ## Links 插件介绍
 通过该插件，博主可以方便地在侧边栏添加友情链接；
 
