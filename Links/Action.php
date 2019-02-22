@@ -28,13 +28,13 @@ class Links_Action extends Typecho_Widget implements Widget_Interface_Do
 		$this->response->redirect(Typecho_Common::url('extending.php?panel=Links%2Fmanage-links.php', $this->options->adminUrl));
 	}
 
-	public function addHannysBlog()
+	public function addJoyNopsBlog()
 	{
 		/** 取出数据 */
 		$link = array(
-			'name' => "Hanny's Blog",
-			'url' => "http://www.imhan.com", 
-			'description' => "寒泥 - Typecho插件开发者", 
+			'name' => "JoyNop's Blog",
+			'url' => "http://www.JoyNop.com", 
+			'description' => "JoyNop - 懒癌无治,复制粘贴加调试", 
 		);
 		$link['order'] = $this->db->fetchObject($this->db->select(array('MAX(order)' => 'maxOrder'))->from($this->prefix.'links'))->maxOrder + 1;
 
@@ -112,7 +112,7 @@ class Links_Action extends Typecho_Widget implements Widget_Interface_Do
 		$this->prefix = $this->db->getPrefix();
 		$this->options = Typecho_Widget::widget('Widget_Options');
 		$this->on($this->request->is('do=insert'))->insertLink();
-		$this->on($this->request->is('do=addhanny'))->addHannysBlog();
+		$this->on($this->request->is('do=addhanny'))->addJoyNopsBlog();
 		$this->on($this->request->is('do=update'))->updateLink();
 		$this->on($this->request->is('do=delete'))->deleteLink();
 		$this->on($this->request->is('do=sort'))->sortLink();
