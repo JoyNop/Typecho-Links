@@ -268,7 +268,7 @@ class Links_Plugin implements Typecho_Plugin_Interface
 			$pattern = "<li><a href=\"{url}\" title=\"{title}\" target=\"_blank\"><img src=\"{image}\" alt=\"{name}\" /></a></li>\n";
 		} else if ($pattern == "SHOW_MIX") {
 			$pattern = "<li><a href=\"{url}\" title=\"{title}\" target=\"_blank\"><img src=\"{image}\" alt=\"{name}\" /><span>{name}</span></a></li>\n";
-		}else if ($pattern == "SHOW_DOLPHIN") {
+		} else if ($pattern == "SHOW_DOLPHIN") {
 			$pattern = "<li><a href=\"{url}\" title=\"{name}\" target=\"_blank\"><img src=\"{image}\" alt=\"{name}\" /><h4>{name}</h4><p>{description}</p></a></li>\n";
 		}
 		$db = Typecho_Db::get();
