@@ -3,7 +3,38 @@
 HANNY老师写的东西感觉都成了typecho的精品了，非常感谢在茫茫人海中还有这样一位好的互联网知识推动者，有幸使用到HANNY老师的Links插件，怎能不记录一下呢？但是HANNY的链接好像打不开了emmm
 
 >本版基于原版修改，适配于[Dolphin - 海豚 - Typecho主题](https://www.ryongyon.com/dolphin.html)
->
+
+本插件上传到`usr/plugins`
+
+修改Dolpin主题
+
+`/usr/themes/Dolphin/page-links.php`
+
+```php
+<?php
+/**
+* Template Page of Links
+*
+* @package custom
+*/
+if (!defined('__TYPECHO_ROOT_DIR__')) exit;
+$this->need('header.php');
+?>
+<div class="container grid-<?php $this->options->page_width(); ?> s-content">
+    <div class="column col-12" style="background:#fff;border-radius:5px;padding:20px 15px;margin-bottom:20px">
+        <div class="links">
+            <ul>
+              <?php Links_Plugin::output("SHOW_DOLPHIN"); ?>
+            </ul>
+            <?php $this->content(); ?>
+        </div>
+    </div>
+</div>
+
+<?php $this->need('footer.php'); ?>
+
+
+```
 
 
 ## Links 插件介绍
