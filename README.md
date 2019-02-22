@@ -1,0 +1,2 @@
+# Typecho-Links
+new TypechoLiks 
