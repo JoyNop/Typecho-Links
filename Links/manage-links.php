@@ -18,6 +18,8 @@ include 'menu.php';
               title="如果你喜欢，可以点击快速添加JoyNop的博客。"><?php _e('添加JoyNop'); ?></a></li>
           <li><a href="http://www.imhan.com/archives/typecho-links/" title="查看友情链接使用帮助"
               target="_blank"><?php _e('帮助'); ?></a></li>
+          <li><a href="https://github.com/JoyNop/Typecho-Links" title="插件地址"
+              target="_blank"><?php _e('插件地址'); ?></a></li>
         </ul>
       </div>
 
